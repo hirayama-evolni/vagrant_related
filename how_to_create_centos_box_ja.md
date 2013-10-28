@@ -124,10 +124,11 @@ X11関係のエラーは無視して大丈夫です。
 
 次のように編集します。
 
-`env_keep`に`SSH_AUTH_SOCK`を追加
-`Defaults requiretty`をコメントアウト
-`%admin ALL=NOPASSWD: ALL`を追加
-
+```
+env_keepにSSH_AUTH_SOCKを追加
+Defaults requirettyをコメントアウト
+%admin ALL=NOPASSWD: ALLを追加
+```
 sshの鍵の設定をします。
 
 ```
@@ -157,4 +158,4 @@ sshの鍵の設定をします。
 vagrant package --base centos64
 ```
 
-するとpackage.boxができる。
+するとpackage.boxができます。
