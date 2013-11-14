@@ -142,9 +142,25 @@ sshの鍵の設定をします。
 # chmod 600 authorized_keys
 ```
 
+#### chefのインストール
+
+chefはruby 1.9以降が必要ですがcentos6はruby1.8なので、ここではソースか
+ら入れます。
+
+[公式ダウンロードページ](https://www.ruby-lang.org/ja/downloads/)から
+ruby2.0のソースをダウンロードしてきて展開し、
+```
+configure --prefix=/usr --disable-install-doc && make && make install
+```
+でインストールします。
+
+終わったらソースは消しましょう。
+
+次に`gem install chef`してchefを入れます。
+
 #### その他必要なもののインストール
 
-例えばChef関係など必要であれば入れて下さい。
+他に必要なものがあれば入れて下さい。
 
 各プロジェクトで使用するものは、provisionの方で個別に入れるようにしましょう。
 
