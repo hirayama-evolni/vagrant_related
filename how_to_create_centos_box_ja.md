@@ -150,6 +150,7 @@ chefはruby 1.9以降が必要ですがcentos6はruby1.8なので、ここでは
 [公式ダウンロードページ](https://www.ruby-lang.org/ja/downloads/)から
 ruby2.0のソースをダウンロードしてきて展開し、
 ```
+yum install -y openssl-devel
 configure --prefix=/usr --disable-install-doc && make && make install
 ```
 でインストールします。
@@ -162,7 +163,7 @@ configure --prefix=/usr --disable-install-doc && make && make install
 
 他に必要なものがあれば入れて下さい。
 
-各プロジェクトで使用するものは、provisionの方で個別に入れるようにしましょう。
+基本的に各プロジェクトで使用するものは、provisionの方で個別に入れるようにしましょう。
 
 ## パッケージング
 
