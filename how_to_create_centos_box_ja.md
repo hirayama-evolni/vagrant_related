@@ -69,6 +69,11 @@ rootのパスワードは`vagrant`にします。
 
 リブートしてrootでログインします。
 
+#### eth0がない場合
+
+eth0がなくて外に出られない場合は、`/etc/sysconfig/network-scripts/ifcfg-eth0`を編集して、
+`ONBOOT=yes`にしましょう。
+
 #### ファイヤーウォールの停止
 
 ホスト側からのアクセス制限を解除します。
