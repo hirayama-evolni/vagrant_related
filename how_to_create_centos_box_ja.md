@@ -76,6 +76,8 @@ rootのパスワードは`vagrant`にします。
 ```
 # /etc/init.d/iptables stop
 # chkconfig iptables off
+# /etc/init.d/ip6tables stop
+# chkconfig ip6tables off
 ```
 
 #### selinuxの無効化
