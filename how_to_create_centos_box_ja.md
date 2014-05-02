@@ -143,7 +143,7 @@ sshの鍵の設定をします。
 # cd /home/vagrant
 # mkdir .ssh
 # cd .ssh
-# curl https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub > authorized_keys
+# curl -L -k https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub > authorized_keys
 # chown -R vagrant:vagrant .
 # chmod 700 .
 # chmod 600 authorized_keys
